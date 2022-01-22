@@ -593,11 +593,26 @@ public class Main {
         excitedEmotion = new JLabel("Excited");
         excitedEmotion.setBounds(50, 50, 500, 50);
         excitedEmotion.setFont(new Font("Serif", Font.PLAIN, 40));
-        excitedEmotion.add(excitedEmotion);
+        excitedPanel.add(excitedEmotion);
 
         // text for excited emotion
+        excitedInfoText = new JTextArea("Life is the most exciting thing that’ll ever happen to you! \n" +
+                "Nothing stays forever. Enjoy the moment while you \n" +
+                "work to create the most exciting future! \n" +
+                "Listen to these beats if the future \n" + "looks good to you!\n");
 
+        excitedInfoText.setBounds(120,50,350,75);
+        excitedInfoText.setFont(new Font("Serif", Font.PLAIN, 14));
 
+        JButton excitedButton = new JButton("Excited Playlist");
+        excitedButton.setBounds(100, 250, 280, 50);
+        excitedButton.addActionListener((e) -> {
+            excitedFrame.setVisible(false);
+            excitedFrame.dispose();
+        });
+        excitedPanel.add(excitedButton);
+
+        excitedPanel.add(excitedInfoText);
         excitedPanel.setLayout(null);
         excitedFrame.setVisible(true);
 
@@ -615,7 +630,7 @@ public class Main {
         hopefulEmotion = new JLabel("Hopeful");
         hopefulEmotion.setBounds(50, 50, 500, 50);
         hopefulEmotion.setFont(new Font("Serif", Font.PLAIN, 40));
-        hopefulEmotion.add(hopefulEmotion);
+        hopefulPanel.add(hopefulEmotion);
 
         // text for hopeful emotion
         hopefulInfoText = new JTextArea("Hope is what keeps us going, hope for a better tomorrow! And just sometimes, \n" +
@@ -624,6 +639,16 @@ public class Main {
         hopefulInfoText.setBounds(120, 50, 350, 75);
         hopefulInfoText.setFont(new Font("Serif", Font.PLAIN, 14));
 
+        JButton hopefulButton = new JButton("Hopeful Button");
+        hopefulButton.setBounds(100,250,280,50);
+        hopefulButton.addActionListener((e) -> {
+                    hopefulFrame.setVisible(false);
+                    hopefulFrame.dispose();
+                    // call next screen
+                });
+        hopefulPanel.add(hopefulButton);
+
+        hopefulPanel.add(hopefulInfoText);
         hopefulPanel.setLayout(null);
         hopefulFrame.setVisible(true);
 
@@ -638,10 +663,10 @@ public class Main {
         optimisticFrame.add(optimisticPanel);
 
         // label for optimistic emotion
-        optimisticEmotion = new JLabel("Excited");
+        optimisticEmotion = new JLabel("Optimistic");
         optimisticEmotion.setBounds(50, 50, 500, 50);
         optimisticEmotion.setFont(new Font("Serif", Font.PLAIN, 40));
-        optimisticEmotion.add(optimisticEmotion);
+        optimisticPanel.add(optimisticEmotion);
 
         // text for optimistic emotion
         optimisticInfoText = new JTextArea("Looking for a dose of positivity? You’ve come to the right place! It's all about \n" +
@@ -650,7 +675,18 @@ public class Main {
         optimisticInfoText.setBounds(120, 50, 350, 75);
         optimisticInfoText.setFont(new Font("Serif", Font.PLAIN, 14));
 
-        excitedPanel.setLayout(null);
+
+        JButton optimisticButton = new JButton("Optimistic Playlist");
+        optimisticButton.setBounds(100, 250,280,50);
+        optimisticButton.addActionListener((e) -> {
+            optimisticFrame.setVisible(false);
+            optimisticFrame.dispose();
+            // call next screen
+        });
+        optimisticPanel.add(optimisticButton);
+
+        optimisticPanel.add(optimisticInfoText);
+        optimisticPanel.setLayout(null);
         optimisticFrame.setVisible(true);
 
     }
@@ -664,10 +700,10 @@ public class Main {
         nervousFrame.add(nervousPanel);
 
         // label for nervous emotion
-        nervousEmotion = new JLabel("Excited");
+        nervousEmotion = new JLabel("Nervous");
         nervousEmotion.setBounds(50, 50, 500, 50);
         nervousEmotion.setFont(new Font("Serif", Font.PLAIN, 40));
-        nervousEmotion.add(nervousEmotion);
+        nervousPanel.add(nervousEmotion);
 
         // text for nervous emotion
         nervousInfoText = new JTextArea("Worried about a presentation, or is something more serious? Well, just know that you \n" +
@@ -677,6 +713,16 @@ public class Main {
         nervousInfoText.setBounds(120, 50, 350, 75);
         nervousInfoText.setFont(new Font("Serif", Font.PLAIN, 14));
 
+        JButton nervousButton = new JButton("Nervous Playlist");
+        nervousButton.setBounds(100, 250, 200, 50);
+        nervousButton.addActionListener((e) -> {
+                nervousFrame.setVisible(false);
+                nervousFrame.dispose();
+                // call next screen
+                });
+        nervousPanel.add(nervousButton);
+
+        nervousPanel.add(nervousInfoText);
         nervousPanel.setLayout(null);
         nervousFrame.setVisible(true);
 
@@ -688,13 +734,13 @@ public class Main {
         confusedPanel = new JPanel();
         confusedFrame.setSize(500, 500);
         confusedFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        confusedFrame.add(excitedPanel);
+        confusedFrame.add(confusedPanel);
 
         // label for confused emotion
-        confusedEmotion = new JLabel("Excited");
+        confusedEmotion = new JLabel("Confused");
         confusedEmotion.setBounds(50, 50, 500, 50);
         confusedEmotion.setFont(new Font("Serif", Font.PLAIN, 40));
-        confusedEmotion.add(confusedEmotion);
+        confusedPanel.add(confusedEmotion);
 
         // text for confused emotion
         confusedInfoText = new JTextArea("Confused: Hmm what is going on?? Life sometimes throws us curve balls and we don’t \n" +
@@ -703,6 +749,16 @@ public class Main {
         confusedInfoText.setBounds(120, 50, 350, 75);
         confusedInfoText.setFont(new Font("Serif", Font.PLAIN, 14));
 
+        JButton confusedButton = new JButton("Confused Playlist");
+        confusedButton.setBounds(100,250,280,50);
+        confusedButton.addActionListener((e) -> {
+            confusedFrame.setVisible(false);
+            confusedFrame.dispose();
+        });
+
+        confusedPanel.add(confusedButton);
+
+        confusedPanel.add(confusedInfoText);
         confusedPanel.setLayout(null);
         confusedFrame.setVisible(true);
 
@@ -734,7 +790,6 @@ public class Main {
         happyButton = new JButton("Happy Playlist");
         happyButton.setBounds(100, 250, 280, 50);
         ActionListener actionListener = new ActionListener() {
-            //@Override
             public  void actionPerformed(ActionEvent e) {
                 if (e.getSource() == happyButton) {
                     playlistLink = "https://open.spotify.com/playlist/37i9dQZF1EpzeGfr1URgOo";
@@ -934,7 +989,5 @@ public class Main {
         }
     }
 }
-
-
 
 
