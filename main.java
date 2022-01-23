@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URI;
 
-public class Main1 {
+public class Main {
 
 
     /////////// PAGE 3 (EMOTION-CHOOSING) VARIABLES ////////////
