@@ -308,6 +308,7 @@ public class Main {
 
         //button for Lethargic
         lethargic = new JButton("Lethargic");
+        lethargic.setBackground(Color.decode("#767945"));
         lethargic.setBounds(550, 180, 100, 60);
         lethargic.addActionListener((e) -> {
             lethargicPage();
@@ -325,6 +326,7 @@ public class Main {
 
         //button for Excited
         excited = new JButton("Excited");
+        excited.setBackground(Color.decode("#FF67BD"));
         excited.setBounds(250, 280, 100, 60);
         excited.addActionListener((e) -> {
             excited();
@@ -333,6 +335,7 @@ public class Main {
 
         //button for Hopeful
         hopeful = new JButton("Hopeful");
+        hopeful.setBackground(Color.decode("#98E9ED"));
         hopeful.setBounds(350, 280, 100, 60);
         hopeful.addActionListener((e) -> {
             hopeful();
@@ -341,6 +344,7 @@ public class Main {
 
         //button for Optimistic
         optimistic = new JButton("Optimistic");
+        optimistic.setBackground(Color.decode("#FFC91C"));
         optimistic.setBounds(450, 280, 100, 60);
         optimistic.addActionListener((e) -> {
             optimistic();
@@ -367,6 +371,7 @@ public class Main {
 
         //button for Angry
         angry = new JButton("Angry");
+        angry.setBackground(Color.decode(" #A40000"));
         angry.setBounds(350, 380, 100, 60);
         angry.addActionListener((e) -> {
             angryPage();
@@ -375,6 +380,7 @@ public class Main {
 
         //button for Nervous
         nervous = new JButton("Nervous");
+        nervous.setBackground(Color.decode("#539D53"));
         nervous.setBounds(450, 380, 100, 60);
         nervous.addActionListener((e) -> {
             nervous();
@@ -383,6 +389,7 @@ public class Main {
 
         //button for Confused
         confused = new JButton("Confused");
+        confused.setBackground(Color.decode("#9C7F21"));
         confused.setBounds(550, 380, 100, 60);
         confused.addActionListener((e) -> {
             confused();
@@ -391,6 +398,7 @@ public class Main {
 
         //button for Heartbroken
         heartbroken = new JButton("Heartbroken");
+        heartbroken.setBackground(Color.decode("#880C00"));
         heartbroken.setBounds(150, 380, 100, 60);
         heartbroken.addActionListener((e) -> {
             heartbroken();
@@ -623,6 +631,7 @@ public class Main {
     public static void heartbroken() {
         // setting up the frames
         heartbrokenFrame = new JFrame();
+        heartbrokenFrame.setBackground(Color.decode("#880C00"));
         heartbrokenPanel = new JPanel();
         heartbrokenFrame.setSize(500, 500);
         heartbrokenFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -670,6 +679,7 @@ public class Main {
     public static void excited(){
         // setting up the frame
         excitedFrame = new JFrame();
+        excitedFrame.setBackground(Color.decode("#FF67BD"));
         excitedPanel = new JPanel();
         excitedFrame.setSize(500, 500);
         excitedFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -719,6 +729,7 @@ public class Main {
     public static void hopeful(){
         // setting up the frame
         hopefulFrame = new JFrame();
+        hopefulFrame.setBackground(Color.decode("#98E9ED"));
         hopefulPanel = new JPanel();
         hopefulFrame.setSize(500, 500);
         hopefulFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -767,6 +778,7 @@ public class Main {
     public static void optimistic(){
         // setting up the frame
         optimisticFrame = new JFrame();
+        optimisticFrame.setBackground(Color.decode("#FFC91C"));
         optimisticPanel = new JPanel();
         optimisticFrame.setSize(500, 500);
         optimisticFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -817,6 +829,7 @@ public class Main {
     public static void nervous(){
         // setting up the frame
         nervousFrame = new JFrame();
+        nervousFrame.setBackground(Color.decode("#539D53"));
         nervousPanel = new JPanel();
         nervousFrame.setSize(500, 500);
         nervousFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -868,6 +881,7 @@ public class Main {
     public static void confused(){
         // setting up the frame
         confusedFrame = new JFrame();
+        confusedFrame.setBackground(Color.decode("#9C7F21"));
         confusedPanel = new JPanel();
         confusedFrame.setSize(500, 500);
         confusedFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -975,6 +989,7 @@ public class Main {
     public static void lethargicPage() {
         //frame
         lethargicFrame = new JFrame();
+        lethargicFrame.setBackground(Color.decode("#767945"));
         lethargicPanel = new JPanel();
         lethargicFrame.setSize(500, 500);
         lethargicFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -1080,6 +1095,7 @@ public class Main {
     public static void angryPage() {
         //frame
         angryFrame = new JFrame();
+        angryFrame.setBackground(Color.decode("#A40000"));
         angryPanel = new JPanel();
         angryFrame.setSize(500, 500);
         angryFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
