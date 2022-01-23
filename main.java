@@ -153,6 +153,12 @@ public class Main {
     /////////// BACK BUTTON FOR EVERY EMOTION /////////////
     static JButton backButton;
 
+    /////////// FEEDBACK PAGES ////////////////////
+    static JFrame feedbackFrame;
+    static JPanel feedbackPanel;
+    static JPanel feedbackPanel1;
+    static JLabel feedbackLabel;
+
     public static void main(String[] args) {
 	// CALL METHODS OF EACH SCREEN
         homePage();
@@ -1115,6 +1121,42 @@ public class Main {
             e.printStackTrace();
         }
     }
+
+    public static void feedbackPage() {
+        //Frame
+        feedbackFrame = new JFrame();
+        Container container = feedbackFrame.getContentPane();
+        container.setLayout(new BorderLayout());
+        feedbackPanel = new JPanel();
+        feedbackPanel1 = new JPanel();
+        feedbackFrame.setSize(3000,500);
+        feedbackFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        //Label
+        feedbackLabel = new JLabel("Feedback - how are we doing?");
+        feedbackLabel.setBounds(500, 20, 500, 35);
+        feedbackLabel.setFont(new Font("Serif", Font.PLAIN, 20));
+        feedbackPanel.add(feedbackLabel);
+
+        //star rating
+        StarRater starRater = new StarRater(5, 2, 1);
+        starRater.addStarListener(
+                new StarRater.StarListener()   {
+                    public void handleSelection(int selection) {
+                        System.out.println(selection);
+                    }
+                });
+        feedbackPanel1.add(starRater);
+        feedbackFrame.add(feedbackPanel);
+        feedbackFrame.add(feedbackPanel1);
+        feedbackFrame.setVisible(true);
+
+        container.add(feedbackPanel, BorderLayout.NORTH);
+        container.add(feedbackPanel1, BorderLayout.CENTER);
+    }
+
 }
+
+
 
 
