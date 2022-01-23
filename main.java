@@ -57,7 +57,6 @@ public class Main {
     public static JButton hopeful;
     public static JButton optimistic;
     public static JButton tearful;
-    public static JButton cheerful;
     public static JButton moody;
     public static JButton angry;
     public static JButton nervous;
@@ -151,7 +150,8 @@ public class Main {
     static JTextArea angryText;
     static JButton angryButton;
 
-
+    /////////// BACK BUTTON FOR EVERY EMOTION /////////////
+    static JButton backButton;
 
     public static void main(String[] args) {
 	// CALL METHODS OF EACH SCREEN
@@ -248,8 +248,6 @@ public class Main {
         // set panel and frame to show
         infoPanel.setLayout(null);
         infoFrame.setVisible(true);
-
-
     }
 
     public static void Page3(){
@@ -431,6 +429,15 @@ public class Main {
         });
         sadPanel.add(sadButton);
 
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            sadFrame.setVisible(false);
+            sadFrame.dispose();
+            Page3();
+        });
+
+
         sadPanel.add(sadInfoText);
         sadPanel.setLayout(null);
         sadFrame.setVisible(true);
@@ -465,6 +472,15 @@ public class Main {
             anxiousFrame.dispose();
             // call next screen
         });
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            anxiousFrame.setVisible(false);
+            anxiousFrame.dispose();
+            Page3();
+        });
+
         anxiousPanel.add(anxiousButton);
 
 
@@ -502,6 +518,15 @@ public class Main {
             unmotivatedFrame.dispose();
             // call next screen
         });
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            unmotivatedFrame.setVisible(false);
+            unmotivatedFrame.dispose();
+            Page3();
+        });
+
         unmotivatedPanel.add(unmotivatedButton);
 
         unmotivatedPanel.add(unmotivatedInfoText);
@@ -539,6 +564,16 @@ public class Main {
             tearfulFrame.dispose();
             // call next screen
         });
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            tearfulFrame.setVisible(false);
+            tearfulFrame.dispose();
+            Page3();
+        });
+
+
         tearfulPanel.add(tearfulButton);
 
         tearfulPanel.add(tearfulInfoText);
@@ -572,6 +607,14 @@ public class Main {
             heartbrokenFrame.setVisible(false);
             heartbrokenFrame.dispose();
             // call next screen
+        });
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            heartbrokenFrame.setVisible(false);
+            heartbrokenFrame.dispose();
+            Page3();
         });
         heartbrokenPanel.add(heartbrokenButton);
 
@@ -611,6 +654,13 @@ public class Main {
             excitedFrame.dispose();
         });
         excitedPanel.add(excitedButton);
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            excitedFrame.setVisible(false);
+            excitedFrame.dispose();
+            Page3();
+        });
 
         excitedPanel.add(excitedInfoText);
         excitedPanel.setLayout(null);
@@ -647,6 +697,14 @@ public class Main {
                     // call next screen
                 });
         hopefulPanel.add(hopefulButton);
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            hopefulFrame.setVisible(false);
+            hopefulFrame.dispose();
+            Page3();
+        });
 
         hopefulPanel.add(hopefulInfoText);
         hopefulPanel.setLayout(null);
@@ -685,6 +743,14 @@ public class Main {
         });
         optimisticPanel.add(optimisticButton);
 
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            optimisticFrame.setVisible(false);
+            optimisticFrame.dispose();
+            Page3();
+        });
+
         optimisticPanel.add(optimisticInfoText);
         optimisticPanel.setLayout(null);
         optimisticFrame.setVisible(true);
@@ -722,6 +788,14 @@ public class Main {
                 });
         nervousPanel.add(nervousButton);
 
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            nervousFrame.setVisible(false);
+            nervousFrame.dispose();
+            Page3();
+        });
+
         nervousPanel.add(nervousInfoText);
         nervousPanel.setLayout(null);
         nervousFrame.setVisible(true);
@@ -754,6 +828,14 @@ public class Main {
         confusedButton.addActionListener((e) -> {
             confusedFrame.setVisible(false);
             confusedFrame.dispose();
+        });
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            confusedFrame.setVisible(false);
+            confusedFrame.dispose();
+            Page3();
         });
 
         confusedPanel.add(confusedButton);
@@ -797,6 +879,17 @@ public class Main {
                 }
             }
         };
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            happyFrame.setVisible(false);
+            happyFrame.dispose();
+            Page3();
+        });
+
+        happyPanel.add(backButton);
+
         happyButton.addActionListener(actionListener);
         happyFrame.add(happyPanel);
         happyPanel.add(happyEmotion);
@@ -839,7 +932,16 @@ public class Main {
                 }
             }
         };
+
         lethargicButton.addActionListener(actionListener);
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            lethargicFrame.setVisible(false);
+            lethargicFrame.dispose();
+            Page3();
+        });
         lethargicFrame.add(lethargicPanel);
         lethargicPanel.add(lethargicEmotion);
         lethargicPanel.add(lethargicText);
@@ -883,6 +985,14 @@ public class Main {
             }
         };
         hypeButton.addActionListener(actionListener);
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            hypeFrame.setVisible(false);
+            hypeFrame.dispose();
+            Page3();
+        });
         hypeFrame.add(hypePanel);
         hypePanel.add(hypeEmotion);
         hypePanel.add(hypeText);
@@ -926,6 +1036,15 @@ public class Main {
             }
         };
         angryButton.addActionListener(actionListener);
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            angryFrame.setVisible(false);
+            angryFrame.dispose();
+            Page3();
+        });
+
         angryFrame.add(angryPanel);
         angryPanel.add(angryEmotion);
         angryPanel.add(angryText);
@@ -969,6 +1088,14 @@ public class Main {
             }
         };
         moodyButton.addActionListener(actionListener);
+
+        backButton = new JButton("Back");
+        backButton.setBounds(100, 300, 280, 50);
+        backButton.addActionListener((e) -> {
+            moodyFrame.setVisible(false);
+            moodyFrame.dispose();
+            Page3();
+        });
         moodyFrame.add(moodyPanel);
         moodyPanel.add(moodyEmotion);
         moodyPanel.add(moodyText);
