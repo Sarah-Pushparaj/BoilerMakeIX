@@ -349,6 +349,7 @@ public class Main {
 
         //button for Tearful
         tearful = new JButton("Tearful");
+        tearful.setBackground(Color.decode("#444FAD"));
         tearful.setBounds(550, 280, 100, 60);
         tearful.addActionListener((e) -> {
             tearful();
@@ -357,6 +358,7 @@ public class Main {
 
         //button for Moody
         moody = new JButton("Moody");
+        moody.setBackground(Color.decode("#706665"));
         moody.setBounds(250, 380, 100, 60);
         moody.addActionListener((e) -> {
             moodyPage();
@@ -573,6 +575,8 @@ public class Main {
         tearfulFrame.setSize(500, 500);
         tearfulFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         tearfulFrame.add(tearfulPanel);
+
+        tearfulPanel.setBackground(Color.decode("#444FAD"));
 
         // label for "ANXIOUS" emotion
         tearfulEmotion = new JLabel("Tearful");
@@ -1131,6 +1135,8 @@ public class Main {
         moodyPanel = new JPanel();
         moodyFrame.setSize(500, 500);
         moodyFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        moodyPanel.setBackground(Color.decode("#706665"));
 
         //label
         moodyEmotion = new JLabel("Moody");
