@@ -440,9 +440,9 @@ public class Main {
         });
         sadPanel.add(sadButton);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonSad = new JButton("Back");
+        backButtonSad.setBounds(100, 300, 280, 50);
+        backButtonSad.addActionListener((e) -> {
             sadFrame.setVisible(false);
             sadFrame.dispose();
             Page3();
@@ -488,9 +488,9 @@ public class Main {
             }
         });
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonAnxious = new JButton("Back");
+        backButtonAnxious.setBounds(100, 300, 280, 50);
+        backButtonAnxious.addActionListener((e) -> {
             anxiousFrame.setVisible(false);
             anxiousFrame.dispose();
             Page3();
@@ -538,9 +538,9 @@ public class Main {
             }
         });
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonUnmotivated = new JButton("Back");
+        backButtonUnmotivated.setBounds(100, 300, 280, 50);
+        backButtonUnmotivated.addActionListener((e) -> {
             unmotivatedFrame.setVisible(false);
             unmotivatedFrame.dispose();
             Page3();
@@ -588,9 +588,9 @@ public class Main {
             }
         });
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonTearful = new JButton("Back");
+        backButtonTearful.setBounds(100, 300, 280, 50);
+        backButtonTearful.addActionListener((e) -> {
             tearfulFrame.setVisible(false);
             tearfulFrame.dispose();
             Page3();
@@ -636,9 +636,9 @@ public class Main {
             }
         });
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonHeartbroken = new JButton("Back");
+        backButtonHeartbroken.setBounds(100, 300, 280, 50);
+        backButtonHeartbroken.addActionListener((e) -> {
             heartbrokenFrame.setVisible(false);
             heartbrokenFrame.dispose();
             Page3();
@@ -686,9 +686,9 @@ public class Main {
             }
         });
         excitedPanel.add(excitedButton);
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonExcited = new JButton("Back");
+        backButtonExcited.setBounds(100, 300, 280, 50);
+        backButtonExcited.addActionListener((e) -> {
             excitedFrame.setVisible(false);
             excitedFrame.dispose();
             Page3();
@@ -734,9 +734,9 @@ public class Main {
         });
         hopefulPanel.add(hopefulButton);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonHopeful = new JButton("Back");
+        backButtonHopeful.setBounds(100, 300, 280, 50);
+        backButtonHopeful.addActionListener((e) -> {
             hopefulFrame.setVisible(false);
             hopefulFrame.dispose();
             Page3();
@@ -784,9 +784,9 @@ public class Main {
         });
         optimisticPanel.add(optimisticButton);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonOptimistic = new JButton("Back");
+        backButtonOptimistic.setBounds(100, 300, 280, 50);
+        backButtonOptimistic.addActionListener((e) -> {
             optimisticFrame.setVisible(false);
             optimisticFrame.dispose();
             Page3();
@@ -835,9 +835,9 @@ public class Main {
         });
         nervousPanel.add(nervousButton);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonNervous = new JButton("Back");
+        backButtonNervous.setBounds(100, 300, 280, 50);
+        backButtonNervous.addActionListener((e) -> {
             nervousFrame.setVisible(false);
             nervousFrame.dispose();
             Page3();
@@ -882,9 +882,9 @@ public class Main {
             }
         });
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonConfused = new JButton("Back");
+        backButtonConfused.setBounds(100, 300, 280, 50);
+        backButtonConfused.addActionListener((e) -> {
             confusedFrame.setVisible(false);
             confusedFrame.dispose();
             Page3();
@@ -988,9 +988,9 @@ public class Main {
 
         //lethargicButton.addActionListener(actionListener);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonLethargic = new JButton("Back");
+        backButtonLethargic.setBounds(100, 300, 280, 50);
+        backButtonLethargic.addActionListener((e) -> {
             lethargicFrame.setVisible(false);
             lethargicFrame.dispose();
             Page3();
@@ -1040,9 +1040,9 @@ public class Main {
         });
         //hypeButton.addActionListener(actionListener);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonHype = new JButton("Back");
+        backButtonHype.setBounds(100, 300, 280, 50);
+        backButtonHype.addActionListener((e) -> {
             hypeFrame.setVisible(false);
             hypeFrame.dispose();
             Page3();
@@ -1091,9 +1091,9 @@ public class Main {
         });
         //angryButton.addActionListener(actionListener);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonAngry = new JButton("Back");
+        backButtonAngry.setBounds(100, 300, 280, 50);
+        backButtonAngry.addActionListener((e) -> {
             angryFrame.setVisible(false);
             angryFrame.dispose();
             Page3();
@@ -1143,9 +1143,9 @@ public class Main {
         });
         //moodyButton.addActionListener(actionListener);
 
-        backButton = new JButton("Back");
-        backButton.setBounds(100, 300, 280, 50);
-        backButton.addActionListener((e) -> {
+        JButton backButtonMoody = new JButton("Back");
+        backButtonMoody.setBounds(100, 300, 280, 50);
+        backButtonMoody.addActionListener((e) -> {
             moodyFrame.setVisible(false);
             moodyFrame.dispose();
             Page3();
