@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URI;
 
-public class Main {
+public class Main1 {
 
 
     /////////// PAGE 3 (EMOTION-CHOOSING) VARIABLES ////////////
@@ -160,7 +160,7 @@ public class Main {
     static JLabel feedbackLabel;
 
     public static void main(String[] args) {
-	// CALL METHODS OF EACH SCREEN
+        // CALL METHODS OF EACH SCREEN
         homePage();
 
 
@@ -432,6 +432,11 @@ public class Main {
             sadFrame.setVisible(false);
             sadFrame.dispose();
             // call next screen
+            if (e.getSource() == sadButton) {
+                playlistLink = "https://open.spotify.com/playlist/3FD0KD0bXdUCFByJmp47yx?si=b15b792f20be4121";
+                openPlaylist(playlistLink);
+            }
+
         });
         sadPanel.add(sadButton);
 
@@ -477,6 +482,10 @@ public class Main {
             anxiousFrame.setVisible(false);
             anxiousFrame.dispose();
             // call next screen
+            if (e.getSource() == anxiousButton) {
+                playlistLink = "https://open.spotify.com/playlist/5h1dKYTeGU3Fkr0B5dY55U?si=1822f4b54de24a5e";
+                openPlaylist(playlistLink);
+            }
         });
 
         backButton = new JButton("Back");
@@ -523,6 +532,10 @@ public class Main {
             unmotivatedFrame.setVisible(false);
             unmotivatedFrame.dispose();
             // call next screen
+            if (e.getSource() == unmotivatedButton) {
+                playlistLink = "https://open.spotify.com/playlist/34hH7cZo02eLRs3OWFZ6sm?si=4cbfcc49945c4fec";
+                openPlaylist(playlistLink);
+            }
         });
 
         backButton = new JButton("Back");
@@ -569,6 +582,10 @@ public class Main {
             tearfulFrame.setVisible(false);
             tearfulFrame.dispose();
             // call next screen
+            if (e.getSource() == tearfulButton) {
+                playlistLink = "https://open.spotify.com/playlist/3nhuIv7V5wEoZTVJ6r9kuR?si=82edb8ca131941ee";
+                openPlaylist(playlistLink);
+            }
         });
 
         backButton = new JButton("Back");
@@ -613,6 +630,10 @@ public class Main {
             heartbrokenFrame.setVisible(false);
             heartbrokenFrame.dispose();
             // call next screen
+            if (e.getSource() == heartbrokenButton) {
+                playlistLink = "https://open.spotify.com/playlist/22qAlKKAerVcRxEd1Un8mp?si=538d46c63a524525";
+                openPlaylist(playlistLink);
+            }
         });
 
         backButton = new JButton("Back");
@@ -658,6 +679,11 @@ public class Main {
         excitedButton.addActionListener((e) -> {
             excitedFrame.setVisible(false);
             excitedFrame.dispose();
+            // call next screen
+            if (e.getSource() == excitedButton) {
+                playlistLink = "https://open.spotify.com/playlist/5pAnOGGiCrQuhruhD4pqx6?si=30805ab8277745f9";
+                openPlaylist(playlistLink);
+            }
         });
         excitedPanel.add(excitedButton);
         backButton = new JButton("Back");
@@ -698,10 +724,14 @@ public class Main {
         JButton hopefulButton = new JButton("Hopeful Button");
         hopefulButton.setBounds(100,250,280,50);
         hopefulButton.addActionListener((e) -> {
-                    hopefulFrame.setVisible(false);
-                    hopefulFrame.dispose();
-                    // call next screen
-                });
+            hopefulFrame.setVisible(false);
+            hopefulFrame.dispose();
+            // call next screen
+            if (e.getSource() == hopefulButton) {
+                playlistLink = "https://open.spotify.com/playlist/7tXAxOtJiW8QUHX0STHv2k?si=51e8d89986554e0e";
+                openPlaylist(playlistLink);
+            }
+        });
         hopefulPanel.add(hopefulButton);
 
         backButton = new JButton("Back");
@@ -746,6 +776,11 @@ public class Main {
             optimisticFrame.setVisible(false);
             optimisticFrame.dispose();
             // call next screen
+            if (e.getSource() == optimisticButton) {
+                playlistLink = "https://open.spotify.com/playlist/5B93aZgIw8eTCymnMajiAS?si=e864f50dbdcf406d";
+                openPlaylist(playlistLink);
+            }
+
         });
         optimisticPanel.add(optimisticButton);
 
@@ -788,10 +823,16 @@ public class Main {
         JButton nervousButton = new JButton("Nervous Playlist");
         nervousButton.setBounds(100, 250, 200, 50);
         nervousButton.addActionListener((e) -> {
-                nervousFrame.setVisible(false);
-                nervousFrame.dispose();
-                // call next screen
-                });
+            nervousFrame.setVisible(false);
+            nervousFrame.dispose();
+            // call next screen
+            if (e.getSource() == nervousButton) {
+                playlistLink = "https://open.spotify.com/playlist/1hnbFl0InXfDaPcsP0qcFp?si=d46eb8e4653746ff";
+                openPlaylist(playlistLink);
+            }
+
+
+        });
         nervousPanel.add(nervousButton);
 
         backButton = new JButton("Back");
@@ -834,6 +875,11 @@ public class Main {
         confusedButton.addActionListener((e) -> {
             confusedFrame.setVisible(false);
             confusedFrame.dispose();
+            // call next screen
+            if (e.getSource() == confusedButton) {
+                playlistLink = "https://open.spotify.com/playlist/5ma2pSUS004J7r1sdkZZ1K?si=5ec5770670c445e8";
+                openPlaylist(playlistLink);
+            }
         });
 
         backButton = new JButton("Back");
@@ -877,14 +923,15 @@ public class Main {
         //button
         happyButton = new JButton("Happy Playlist");
         happyButton.setBounds(100, 250, 280, 50);
-        ActionListener actionListener = new ActionListener() {
-            public  void actionPerformed(ActionEvent e) {
-                if (e.getSource() == happyButton) {
-                    playlistLink = "https://open.spotify.com/playlist/37i9dQZF1EpzeGfr1URgOo";
-                    openPlaylist(playlistLink);
-                }
+        happy.addActionListener((e) -> {
+            happyFrame.setVisible(false);
+            happyFrame.dispose();
+            // call next screen
+            if (e.getSource() == happyButton) {
+                playlistLink = "https://open.spotify.com/playlist/1VQcd4cBfVe9ftXTi2aDRA?si=62454d6cb3e14ad0";
+                openPlaylist(playlistLink);
             }
-        };
+        });
 
         backButton = new JButton("Back");
         backButton.setBounds(100, 300, 280, 50);
@@ -896,7 +943,7 @@ public class Main {
 
         happyPanel.add(backButton);
 
-        happyButton.addActionListener(actionListener);
+        //happyButton.addActionListener(actionListener);
         happyFrame.add(happyPanel);
         happyPanel.add(happyEmotion);
         happyPanel.add(happyText);
@@ -929,17 +976,17 @@ public class Main {
         //button
         lethargicButton = new JButton("Lethargic Playlist");
         lethargicButton.setBounds(550, 300, 200, 50);
-        ActionListener actionListener = new ActionListener() {
-            //@Override
-            public  void actionPerformed(ActionEvent e) {
-                if (e.getSource() == lethargicButton) {
-                    playlistLink = "https://open.spotify.com/playlist/1owLRaO5czacdHIi33fSaX";
-                    openPlaylist(playlistLink);
-                }
+        lethargic.addActionListener((e) -> {
+            lethargicFrame.setVisible(false);
+            lethargicFrame.dispose();
+            // call next screen
+            if (e.getSource() == lethargicButton) {
+                playlistLink = "https://open.spotify.com/playlist/4VZbLAwWwKmY2KkyssRm9K?si=bb43cea2fbb14f40\n";
+                openPlaylist(playlistLink);
             }
-        };
+        });
 
-        lethargicButton.addActionListener(actionListener);
+        //lethargicButton.addActionListener(actionListener);
 
         backButton = new JButton("Back");
         backButton.setBounds(100, 300, 280, 50);
@@ -981,16 +1028,17 @@ public class Main {
         //button
         hypeButton = new JButton("Hype Playlist");
         hypeButton.setBounds(550, 300, 200, 50);
-        ActionListener actionListener = new ActionListener() {
-            //@Override
-            public  void actionPerformed(ActionEvent e) {
-                if (e.getSource() == hypeButton) {
-                    playlistLink = "https://open.spotify.com/playlist/7zldOMl7Rk6GPJzE6GRE86";
-                    openPlaylist(playlistLink);
-                }
+
+        hype.addActionListener((e) -> {
+            hypeFrame.setVisible(false);
+            hypeFrame.dispose();
+            // call next screen
+            if (e.getSource() == hypeButton) {
+                playlistLink = "https://open.spotify.com/playlist/3jlUqrAKdwCvr5LROT7J1a?si=15e410d2cf2845c1";
+                openPlaylist(playlistLink);
             }
-        };
-        hypeButton.addActionListener(actionListener);
+        });
+        //hypeButton.addActionListener(actionListener);
 
         backButton = new JButton("Back");
         backButton.setBounds(100, 300, 280, 50);
@@ -1032,16 +1080,16 @@ public class Main {
         //button
         angryButton = new JButton("Angry Playlist");
         angryButton.setBounds(550, 300, 200, 50);
-        ActionListener actionListener = new ActionListener() {
-            //@Override
-            public  void actionPerformed(ActionEvent e) {
-                if (e.getSource() == angryButton) {
-                    playlistLink = "https://open.spotify.com/playlist/37i9dQZF1DX4JAvHpjipBk";
-                    openPlaylist(playlistLink);
-                }
+        angry.addActionListener((e) -> {
+            angryFrame.setVisible(false);
+            angryFrame.dispose();
+            // call next screen
+            if (e.getSource() == angryButton) {
+                playlistLink = "https://open.spotify.com/playlist/02IZNGf6D3NGIKHA2yPjsz?si=ca7ef272d03442c4";
+                openPlaylist(playlistLink);
             }
-        };
-        angryButton.addActionListener(actionListener);
+        });
+        //angryButton.addActionListener(actionListener);
 
         backButton = new JButton("Back");
         backButton.setBounds(100, 300, 280, 50);
@@ -1084,16 +1132,16 @@ public class Main {
         //button
         moodyButton = new JButton("Moody Playlist");
         moodyButton.setBounds(550, 300, 200, 50);
-        ActionListener actionListener = new ActionListener() {
-            //@Override
-            public  void actionPerformed(ActionEvent e) {
-                if (e.getSource() == moodyButton) {
-                    playlistLink = "https://open.spotify.com/playlist/37i9dQZEVXbtQvNrKya7Fk";
-                    openPlaylist(playlistLink);
-                }
+        moody.addActionListener((e) -> {
+            moodyFrame.setVisible(false);
+            moodyFrame.dispose();
+            // call next screen
+            if (e.getSource() == moodyButton) {
+                playlistLink = "https://open.spotify.com/playlist/5MvYLlpA7HPOxoeDy7GwlF?si=26bc604f083d46e2\n";
+                openPlaylist(playlistLink);
             }
-        };
-        moodyButton.addActionListener(actionListener);
+        });
+        //moodyButton.addActionListener(actionListener);
 
         backButton = new JButton("Back");
         backButton.setBounds(100, 300, 280, 50);
@@ -1156,7 +1204,3 @@ public class Main {
     }
 
 }
-
-
-
-
