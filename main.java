@@ -272,6 +272,7 @@ public class Main {
 
         //button for Happy
         happy = new JButton("Happy");
+        happy.setBackground(Color.decode("#FFFF00"));
         happy.setBounds(150, 180, 100, 60);
         happy.addActionListener((e) -> {
             happyPage();
@@ -280,6 +281,7 @@ public class Main {
 
         //button for Sad
         sad = new JButton("Sad");
+        sad.setBackground(Color.decode("#0B19DF"));
         sad.setBounds(250, 180, 100, 60);
         sad.addActionListener((e) -> {
             sadPage();
@@ -288,6 +290,7 @@ public class Main {
 
         //button for Anxious
         anxious = new JButton("Anxious");
+        anxious.setBackground(Color.decode("#FA9D00"));
         anxious.setBounds(350, 180, 100, 60);
         anxious.addActionListener((e) -> {
             anxiousPage();
@@ -296,6 +299,7 @@ public class Main {
 
         //button for Unmotivated
         unmotivated = new JButton("Unmotivated");
+        unmotivated.setBackground(Color.decode("#946635"));
         unmotivated.setBounds(450, 180, 100, 60);
         unmotivated.addActionListener((e) -> {
             unmotivated();
@@ -312,6 +316,7 @@ public class Main {
 
         //button for Hype
         hype = new JButton("Hype");
+        hype.setBackground(Color.decode("#FF1D84"));
         hype.setBounds(150, 280, 100, 60);
         hype.addActionListener((e) -> {
             hypePage();
@@ -411,6 +416,8 @@ public class Main {
         sadFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         sadFrame.add(sadPanel);
 
+        sadPanel.setBackground(Color.decode("#0B19DF"));
+
         // label for "SAD" emotion
         sadEmotion = new JLabel("Sad");
         sadEmotion.setBounds(40, 60,500, 50);
@@ -463,6 +470,9 @@ public class Main {
         anxiousFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         anxiousFrame.add(anxiousPanel);
 
+        // setting up a color
+        anxiousPanel.setBackground(Color.decode("#FA9D00"));
+
         // label for "ANXIOUS" emotion
         anxiousEmotion = new JLabel("Anxious");
         anxiousEmotion.setBounds(40, 60,500, 50);
@@ -512,6 +522,8 @@ public class Main {
         unmotivatedFrame.setSize(500, 500);
         unmotivatedFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         unmotivatedFrame.add(unmotivatedPanel);
+
+        unmotivatedPanel.setBackground(Color.decode("#946635"));
 
         // label for "ANXIOUS" emotion
         unmotivatedEmotion = new JLabel("Unmotivated");
@@ -905,6 +917,8 @@ public class Main {
         happyFrame.setSize(500, 500);
         happyFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        happyPanel.setBackground(Color.decode("#FFFF00"));
+
         //label
         happyEmotion = new JLabel("Happy");
         happyEmotion.setBounds(50, 50, 500, 50);
@@ -1011,6 +1025,8 @@ public class Main {
         hypePanel = new JPanel();
         hypeFrame.setSize(500, 500);
         hypeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        hypePanel.setBackground(Color.decode("#FF1D84"));
 
         //label
         hypeEmotion = new JLabel("Hype");
