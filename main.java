@@ -371,7 +371,7 @@ public class Main {
 
         //button for Angry
         angry = new JButton("Angry");
-        angry.setBackground(Color.decode(" #A40000"));
+        angry.setBackground(Color.decode("#A40000"));
         angry.setBounds(350, 380, 100, 60);
         angry.addActionListener((e) -> {
             angryPage();
